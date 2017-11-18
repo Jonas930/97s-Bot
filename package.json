@@ -1,0 +1,14 @@
+{
+  "name": "97s Bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "Jonas930",
+  "license": "ISC"
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
