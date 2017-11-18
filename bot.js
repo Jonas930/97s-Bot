@@ -41,6 +41,10 @@ bot.on('message', msg => {
       msg.delete();
       msg.channel.send('The newest "Pokemon Universe -Across Time and Space-" is " v1.0.2"\nLink: https://mega.nz/#!ydBBzY4a!fgKzFViM1dzrWtoalC7TdZaT_CKSHASrkciSGW4Ge5k');
       break;
+    //case "membercount":
+    //  msg.delete();
+    //  msg.channel.send(`this guild has ${guild.memberCount} members!`);
+    //  break;
   }
 });
 
