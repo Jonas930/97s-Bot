@@ -4,6 +4,7 @@ const Prefix = "!"
 
 bot.on('ready', () => {
   console.log(`Logged in as ${bot.user.tag}!`);
+  await bot.SetGame("try !help");
 });
 
 bot.on('guildMemberAdd', member =>{
