@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const Prefix = "!"
+const version = "1.0.2"
+const vlink = `https://mega.nz/#!ydBBzY4a!fgKzFViM1dzrWtoalC7TdZaT_CKSHASrkciSGW4Ge5k`
 
 bot.on('ready', () => {
   console.log(`Yes, My Master. ${bot.user.tag} is here!`);
@@ -52,8 +54,8 @@ bot.on('message', msg => {
       break;
     case "game":
       msg.channel.send({embed:{
-        title:`The newest "Pokemon Universe -Across Time and Space-" is "**${process.env.VERSION.toString()}**"`,
-        description: "Link: https://mega.nz/#!ydBBzY4a!fgKzFViM1dzrWtoalC7TdZaT_CKSHASrkciSGW4Ge5k",
+        title:`The newest "Pokemon Universe -Across Time and Space-" is "**${version.toString()}**"`,
+        description: "Link: ${vlink.toString()}",
         color: 0x975597
       }});
       break;
