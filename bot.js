@@ -20,11 +20,11 @@ bot.on('guildMemberRemove', member =>{
 
 bot.on('message', msg => {
   if (msg.author.equals(bot.user)) return;
+  if (msg.content.toLowerCase().includes('hm')){
+    msg.channel.send('Hmmm?\:thinking:');
+  };
   var args = msg.content.split(" ");
   switch (args[0].toLowerCase()) {
-    case "hmmm":
-      msg.channel.send('Hmmm?\:thinking:');
-      break;
     case "lenny":
       msg.channel.send('( ͡° ͜ʖ ͡°)');
       break;
@@ -63,9 +63,12 @@ bot.on('message', msg => {
         color: 0x975597
       }});
       break;
-    case "membercount":
-      msg.channel.send(`This guild has ${msg.guild.memberCount} members!`);
+    case "member":
+    if(msg.member.roles.some(r=>["Game Creator", "97s Studio Member"].includes(r.name)) ) {
+      msg.channel.send(`We have ${msg.guild.memberCount} members in this server!`);
+    } else {
       break;
+    }break;
   }
 });
 bot.login(process.env.BOT_TOKEN);
