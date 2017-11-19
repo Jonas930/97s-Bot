@@ -58,8 +58,8 @@ bot.on('message', msg => {
       break;
     case "game":
       msg.channel.send({embed:{
-        title:`The newest "Pokemon Universe -Across Time and Space-" is "**${version.toString()}**"`,
-        description: `Link: ${vlink.toString()}`,
+        title:`The newest "Pokemon Universe -Across Time and Space-" is "**${process.env.VERSION.toString()}**"`,
+        description: `Link: ${process.env.VLINK.toString()}`,
         color: 0x975597
       }});
       break;
