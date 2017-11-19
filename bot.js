@@ -14,6 +14,10 @@ bot.on('guildMemberAdd', member =>{
   member.addRole(member.guild.roles.find('name', 'Trainers'));
 });
 
+bot.on('guildMemberRemove', member =>{
+  member.guild.channels.find('name', 'work-station').send(member.toString() + " just leave the server...\:cry:");
+});
+
 bot.on('message', msg => {
   if (msg.author.equals(bot.user)) return;
   var args = msg.content.split(" ");
