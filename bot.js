@@ -52,7 +52,7 @@ bot.on('message', msg => {
       break;
     case "game":
       msg.channel.send({embed:{
-        title:`The newest "Pokemon Universe -Across Time and Space-" is "**${version.toString()}**"`,
+        title:`The newest "Pokemon Universe -Across Time and Space-" is "**${process.env.VERSION.toString()}**"`,
         description: "Link: https://mega.nz/#!ydBBzY4a!fgKzFViM1dzrWtoalC7TdZaT_CKSHASrkciSGW4Ge5k",
         color: 0x975597
       }});
