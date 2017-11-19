@@ -4,7 +4,7 @@ const Prefix = "!"
 
 bot.on('ready', () => {
   console.log(`Logged in as ${bot.user.tag}!`);
-  //bot.user.setGame("try !help");
+  bot.user.setGame("Pokemon Universe");
 });
 
 bot.on('guildMemberAdd', member =>{
