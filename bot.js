@@ -1,8 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const Prefix = "!"
-const version = "1.0.2"
-const vlink = `https://mega.nz/#!ydBBzY4a!fgKzFViM1dzrWtoalC7TdZaT_CKSHASrkciSGW4Ge5k`
 
 bot.on('ready', () => {
   console.log(`Yes, My Master. ${bot.user.tag} is here!`);
