@@ -13,7 +13,7 @@ bot.on('guildMemberAdd', member =>{
 });
 
 bot.on('guildMemberRemove', member =>{
-  member.guild.channels.find('name', 'work-station').send(member.toString() + " just leave the server...\:cry:");
+  member.guild.channels.find('name', 'work-station').send(member.user.username + " just leave the server...\:cry:");
 });
 
 bot.on('message', msg => {
