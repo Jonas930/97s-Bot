@@ -8,7 +8,7 @@ bot.on('ready', () => {
 });
 
 bot.on('guildMemberAdd', member =>{
-  member.guild.channels.find('name', 'general').send(member.toString() + ", Welcome to **Pokemon Universe** Discord Server!\:wink:\n\nIn here, you can use...\n\n**!game** -> for the newest version of Pokemon Universe.\n**!fonts** -> for the fonts of Pokemon Universe.\n**!demo** -> for a little gameplay of Pokemon Universe.\n\nHave A Nice Day ( ͡° ͜ʖ ͡°)");
+  member.guild.channels.find('name', 'general').send(member.toString() + ", Welcome to **Pokemon Universe** Discord Server!\:wink:\n\nIn here, you can use...\n\n**!game** -> for the newest version of Pokemon Universe.\n**!fonts** -> for the fonts of Pokemon Universe.\n~~**!demo** -> for a little gameplay of Pokemon Universe.~~\n\nHave A Nice Day ( ͡° ͜ʖ ͡°)");
   member.addRole(member.guild.roles.find('name', 'Trainers'));
 });
 
