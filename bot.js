@@ -40,13 +40,13 @@ bot.on('message', msg => {
     case "commands":
       msg.channel.send('In the **Pokemon Universe** Discord Server, you can use...\n\n**!game** -> for the newest version of Pokemon Universe.\n**!fonts** -> for the fonts of Pokemon Universe.\n**!demo** -> for a little gameplay of Pokemon Universe.');
       break;
-    case "demo":
+    /**case "demo":
       msg.channel.send({embed:{
         title:'The Demo of "Pokemon Universe -Across Time and Space-" is here.',
         description: "Link: https://mega.nz/#!OZ4CEKYK!FeSRL2dm9AUy-hiVouWleeNsi1VHhyHgjT56D2mgGQ0",
         color: 0x975597
       }});
-      break;
+      break;*/
     case "fonts":
       msg.channel.send({embed:{
         title:'The Fonts that used in "Pokemon Universe -Across Time and Space-" is here.',
