@@ -40,6 +40,9 @@ bot.on('message', msg => {
     case "commands":
       msg.channel.send('In the **Pokemon Universe** Discord Server, you can use...\n\n**!game** -> for the newest version of Pokemon Universe.\n**!fonts** -> for the fonts of Pokemon Universe.\n**!demo** -> for a little gameplay of Pokemon Universe.');
       break;
+    case "stream":
+      msg.channel.send('Stream Link: https://www.youtube.com/channel/UCO3-uzqnoSvKxvo9o5FOt8w/live');
+      break;
     /**case "demo":
       msg.channel.send({embed:{
         title:'The Demo of "Pokemon Universe -Across Time and Space-" is here.',
