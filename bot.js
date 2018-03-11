@@ -37,16 +37,13 @@ bot.on('message', msg => {
   if (!msg.content.startsWith(Prefix)) return;
   var args = msg.content.substring(Prefix.length).split(" ");
   switch (args[0].toLowerCase()) {
-    case "commands":
-      msg.channel.send('In the **Pokemon Universe** Discord Server, you can use...\n\n**!game** -> for the newest version of Pokemon Universe.\n**!fonts** -> for the fonts of Pokemon Universe.\n**!demo** -> for a little gameplay of Pokemon Universe.');
-      break;
     case "stream":
       msg.channel.send('Stream Link: https://www.youtube.com/channel/UCO3-uzqnoSvKxvo9o5FOt8w/live');
       break;
     /**case "demo":
       msg.channel.send({embed:{
         title:'The Demo of "Pokemon Universe -Across Time and Space-" is here.',
-        description: "Link: https://mega.nz/#!OZ4CEKYK!FeSRL2dm9AUy-hiVouWleeNsi1VHhyHgjT56D2mgGQ0",
+        description: "Link: ",
         color: 0x975597
       }});
       break;*/
