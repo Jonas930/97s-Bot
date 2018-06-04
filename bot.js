@@ -39,7 +39,7 @@ bot.on('message', msg => {
   switch (args[0].toLowerCase()) {
     case "stream":
     if(msg.member.roles.some(r=>["Game Creator"].includes(r.name)) ) {
-      msg.channel.get(312852544525172736).send('Jonas930 is streaming **Making Pokemon Universe** on Youtube now!\nStream Link: https://www.youtube.com/channel/UCO3-uzqnoSvKxvo9o5FOt8w/live');
+      msg.channel.find('name', 'work-station').send('Jonas930 is streaming **Making Pokemon Universe** on Youtube now!\nStream Link: https://www.youtube.com/channel/UCO3-uzqnoSvKxvo9o5FOt8w/live');
     } else {
       break;
     }break;
