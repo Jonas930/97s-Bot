@@ -19,7 +19,7 @@ bot.on('guildMemberRemove', member =>{
 bot.on('message', msg => {
   if (msg.author.equals(bot.user)) return;
   if (msg.content.toLowerCase().includes('hmm')){
-    msg.guild.channels.find('name', 'work-station').send('Hmmm?\:thinking:');
+    msg.channel.send('Hmmm?\:thinking:');
   };
   var args = msg.content.split(" ");
   switch (args[0].toLowerCase()) {
@@ -38,7 +38,7 @@ bot.on('message', msg => {
   var args = msg.content.substring(Prefix.length).split(" ");
   switch (args[0].toLowerCase()) {
     case "stream":
-      msg.channel.send('Stream Link: https://www.youtube.com/channel/UCO3-uzqnoSvKxvo9o5FOt8w/live');
+      msg.guild.channels.find('name', 'announcements').send('Stream Link: https://www.youtube.com/channel/UCO3-uzqnoSvKxvo9o5FOt8w/live');
       break;
     /**case "demo":
       msg.channel.send({embed:{
