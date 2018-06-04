@@ -18,7 +18,7 @@ bot.on('guildMemberRemove', member =>{
 
 bot.on('message', msg => {
   if (msg.author.equals(bot.user)) return;
-  if (msg.content.toLowerCase().includes('hmm')){
+  if (msg.content.toLowerCase().includes('hm')){
     msg.channel.send('Hmmm?\:thinking:');
   };
   var args = msg.content.split(" ");
@@ -38,11 +38,8 @@ bot.on('message', msg => {
   var args = msg.content.substring(Prefix.length).split(" ");
   switch (args[0].toLowerCase()) {
     case "stream":
-    if(msg.member.roles.some(r=>["Game Creator"].includes(r.name)) ) {
-      msg.channel.find('name', 'work-station').send('Jonas930 is streaming **Making Pokemon Universe** on Youtube now!\nStream Link: https://www.youtube.com/channel/UCO3-uzqnoSvKxvo9o5FOt8w/live');
-    } else {
+      msg.channel.send('Stream Link: https://www.youtube.com/channel/UCO3-uzqnoSvKxvo9o5FOt8w/live');
       break;
-    }break;
     /**case "demo":
       msg.channel.send({embed:{
         title:'The Demo of "Pokemon Universe -Across Time and Space-" is here.',
