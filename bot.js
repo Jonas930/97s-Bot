@@ -19,7 +19,7 @@ bot.on('guildMemberRemove', member =>{
 bot.on('message', msg => {
   if (msg.author.equals(bot.user)) return;
   if (msg.content.toLowerCase().includes('hmm')){
-    msg.channel.send('Hmmm?\:thinking:');
+    msg.channels.find('name', 'work-station').send('Hmmm?\:thinking:');
   };
   var args = msg.content.split(" ");
   switch (args[0].toLowerCase()) {
