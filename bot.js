@@ -38,7 +38,7 @@ bot.on('message', msg => {
   var args = msg.content.substring(Prefix.length).split(" ");
   switch (args[0].toLowerCase()) {
     case "stream":
-      msg.guild.channels.find('name', 'announcements').send('Stream Link: https://www.youtube.com/channel/UCO3-uzqnoSvKxvo9o5FOt8w/live');
+      msg.guild.channels.find('name', 'announcements').send('Jonas930 is streaming **Making Pokemon Universe** on Youtube now!\nStream Link: https://www.youtube.com/channel/UCO3-uzqnoSvKxvo9o5FOt8w/live');
       break;
     /**case "demo":
       msg.channel.send({embed:{
